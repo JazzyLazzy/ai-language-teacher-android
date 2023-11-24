@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        submitButton = binding.submitButton
+        submitButton = binding.submit
         humanText = binding.humanText;
         aiText = binding.aiText;
         submitButton.setOnClickListener {
@@ -63,7 +63,6 @@ class MainActivity : AppCompatActivity() {
             }.start()
 
             // Close the response body
-
         }
         /*setContent {
             Ai_teachTheme {
